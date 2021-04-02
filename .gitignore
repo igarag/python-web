@@ -6,6 +6,11 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,django,flask,pycharm,virtualenv,images,visualstudiocode,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django,flask,pycharm,virtualenv,images,visualstudiocode,vim
 
+### VSCode ###
+settings.json
+launch.json
+
+
 ### Django ###
 *.log
 *.pot
