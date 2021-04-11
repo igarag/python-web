@@ -10,6 +10,8 @@
 settings.json
 launch.json
 
+### PyCharm ###
+.idea/
 
 ### Django ###
 *.log
