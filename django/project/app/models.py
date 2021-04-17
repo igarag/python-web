@@ -1,10 +1,14 @@
 from django.db import models
 
-# Create your models here.
 
 class UserManager(BaseUserManager):
 
-    def create_user(self, username, email, password=None, first_name=None, last_name=None):
+    def create_user(self,
+                    username,
+                    email,
+                    password=None,
+                    first_name=None,
+                    last_name=None) -> user:
         if not username:
             raise TypeError('Users should have a username')
         if not email:
@@ -18,7 +22,7 @@ class UserManager(BaseUserManager):
         user.save()
         return user
 
-    def create_superuser(self, username, email, password=None):
+    def create_superuser(self, username, email, password=None) -> user:
         if password is None:
             raise TypeError('Password should not be none')
 
@@ -29,3 +33,4 @@ class UserManager(BaseUserManager):
         user.is_staff = True
         user.save()
         return user
+
