@@ -13,6 +13,7 @@ classifiers = ["Private :: Do Not Upload"]
 python = "^3.8"
 djangorestframework = "3.12.4"
 environs = "^9.3.3"
+psycopg2-binary = "2.9.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.4"

@@ -9,4 +9,18 @@ services:
     ports:
       - 8009:8000
     env_file:
-      - ./app/.env.dev
+      - ./app/.env
+    depends_on:
+      - movies-db
+  movies-db:
+    image: postgres:13-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=movies
+      - POSTGRES_PASSWORD=movies
+      - POSTGRES_DB=movies_dev
+
+volumes:
+  postgres_data:
+
