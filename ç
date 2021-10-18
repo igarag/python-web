@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "django-tdd"
+version = "0.1.0"
+description = "TDD course using Django-REST and docker."
+authors = ["NachoAz <n.arranz.agueda@gmail.com>"]
+readme = 'README.md'
+repository = "https://github.com/igarag/python-web"
+keywords = ["python", "test-driven development", "web"]
+# Avoid publish: https://twitter.com/pypi/status/1097241506304454656
+classifiers = ["Private :: Do Not Upload"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+djangorestframework = "3.12.4"
+environs = "^9.3.3"
+psycopg2-binary = "2.9.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
