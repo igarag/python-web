@@ -14,11 +14,20 @@ class UserAdmin(DefaultUserAdmin):
 @admin.register(Movie)
 class MovieAdmin(admin.ModelAdmin):
     fields = (
-        "title", "genre", "year", "created_date", "updated_date",
+        "title",
+        "genre",
+        "year",
+        "created_date",
+        "updated_date",
     )
     list_display = (
-        "title", "genre", "year", "created_date", "updated_date",
+        "title",
+        "genre",
+        "year",
+        "created_date",
+        "updated_date",
     )
     readonly_fields = (
-        "created_date", "updated_date",
+        "created_date",
+        "updated_date",
     )
